@@ -26,34 +26,29 @@ let array=[];
         container.appendChild(box);
         box.classList.add("box")
         box.innerHTML=`${array[i]}`
+        console.log(array[i])
         }
     }) 
     //5 prompt per chiedere all'utente di inserire i numeri che ha visto
+  
+    
     let numeriUtente=[];
     setTimeout( function numeriInseriti(){
-        let i = 0;
-        while (i < 5) {
+        let x = 0;
+        while (x < 5) {
             numeroInserito=parseInt(prompt("Inserisci uno dei numeri che hai visto"));
-            numeriUtente.push(numeroInserito)
-            console.log(numeriUtente)
-            i++;
-        }   
-    },3000)
+            numeriUtente.push(numeroInserito);
+            x++;
+        } 
+           console.log(`I numeri inseriti dall'utente sono: ${numeriUtente}`);
+
+          let numeroCorretto=[]
     
-    
+        if(array.includes.numeriUtente){
+            numeroCorretto.push(numeriUtente);
+           
+        }
+        console.log(`I numeri indovinati sono: ${numeroCorretto} `)  
+    },3000);
    
-
-
-
-
-
-
-
-
-//1 funzione e stampa
-    //push in array 
-    //2 crea 5 prompt per compilare i numeri che ha visto
-    //pushare i numeri del prompt in un altro array
-    //controllare con includes
-    //3 ciclo for con gli if per controllare se il numero insrito è uguale se è true 
-    //estratto i numeri corretti gli pushamo in un altro 
+    
