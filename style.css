@@ -1,0 +1,22 @@
+.cont_grid{
+    width:40%;
+    margin: 0 auto;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: calc(80% / 5);
+    height: calc(100% / 5);
+    border:1px solid #11221c ;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.f-grid{
+    display: flex;
+    justify-content:center;
+}
